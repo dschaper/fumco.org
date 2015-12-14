@@ -11,3 +11,20 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: none;
 }
 /* end reset browser styles */
+
+/* modify url link defaults */
+a {
+	&:link { 
+	color: $logo_redDark; 
+	}
+	&:visited { 
+	color: #54585A; 
+	}
+	&:hover { 
+	color: $logo_redPrimary; 
+	}
+	&:active { 
+	color: #F5E1A4; 
+	}
+}
+
