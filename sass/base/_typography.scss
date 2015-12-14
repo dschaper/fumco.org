@@ -3,9 +3,11 @@
 
 body {
 	font-family: $body-font;
+	padding: 0 5px 0 5px;
 }
 %headline {
 	font-family: $headline-font;
+	padding: 0 5px 0 5px;
 }
 h1 {
 	@extend %headline;
@@ -19,6 +21,9 @@ h2 {
 h3 {
 	@extend %headline;
 	font-style:italic;
-	font-weight:400;
-	margin-top:0;
+	font-size: 18px;
+	font-weight: 400;
+	border-style: outset;
+	border-width: 0 0 1px 0;
+	margin: 0 0 5px 0;
 }
