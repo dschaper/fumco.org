@@ -27,4 +27,28 @@ a {
 	color: #F5E1A4; 
 	}
 }
+img {
+	display: block;
+}
+#siteHeader {
+	background-color: $logo_redDark;
+	margin-bottom: 1em;
+}
 
+body {
+	background-color: rgb(182,182,182);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+main {
+	background-color: rgb(255,255,255);
+	border-bottom: outset thin rgba(123, 121, 143,.6);
+	padding-bottom: 1em;
+}
+article {
+	clear: both;
+	padding: 0 .8em 0;
+}
+.headshot {
+	float: left;
+}

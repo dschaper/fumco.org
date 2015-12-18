@@ -1,9 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-@import url(https://fonts.googleapis.com/css?family=Lato:900italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway|Lato:900italic,400italic);
 
 body {
 	font-family: $body-font;
-	padding: 0 5px 0 5px;
+	padding: 0 10px 0;
 	font-size: 1.2rem;
 }
 %headline {
@@ -18,8 +17,8 @@ h2 {
 	font-style:italic;
 	font-weight:900;
 	margin-bottom: 0;
-	}
-p.subTitle {
+}
+p:only-of-type {
 	@extend %headline;
 	font-style:italic;
 	font-size: 18px;
@@ -27,4 +26,21 @@ p.subTitle {
 	border-style: outset;
 	border-width: 0 0 1px 0;
 	margin: 0 0 5px 0;
+}
+main h1 {
+	background: none;
+	padding: 0;
+	border: none;
+	margin: 0;
+	font-size: 2em;
+	font-weight: normal;
+	font-style: normal;
+	color: rgba(255, 255, 255, .6);
+	text-shadow: 2px 2px 0 rgba(123, 121, 143,.6);
+}
+.articleFooter {
+	text-align: right;
+}
+#siteFooter {
+	text-align: right;
 }
