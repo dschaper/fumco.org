@@ -33,21 +33,22 @@ img {
 #siteHeader {
 	background-color: $logo_redDark;
 	margin-bottom: 1em;
+	box-sizing: content-box;
 }
 
 body {
 	background-color: rgb(182,182,182);
-	padding-left: 5px;
-	padding-right: 5px;
 }
 main {
 	background-color: rgb(255,255,255);
 	border-bottom: outset thin rgba(123, 121, 143,.6);
 	padding-bottom: 1em;
+	max-width: 650px;
+	margin: 0 auto;
 }
 article {
 	clear: both;
-	padding: 0 .8em 0;
+	padding-right:.8em;
 }
 .headshot {
 	float: left;
