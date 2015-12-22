@@ -2,7 +2,7 @@
 
 body {
 	font-family: $body-font;
-	font-size: 1.2rem;
+	font-size: 100%;
 }
 %headline {
 	font-family: $headline-font;
@@ -13,33 +13,63 @@ h1 {
 }
 h2 {
 	@extend %headline;
-	font-style:italic;
-	font-weight:900;
-	margin-bottom: 0;
 }
-p:only-of-type {
-	@extend %headline;
-	font-style:italic;
-	font-size: 18px;
-	font-weight: 400;
-	border-style: outset;
-	border-width: 0 0 1px 0;
-	margin: 0 0 5px 0;
+#mainHeader {
+	color: white;
 }
-main h1 {
-	background: none;
-	padding: 0;
-	border: none;
-	margin: 0;
+.bannerOverlayText {
+	text-align: center;
+	color:rgba(255,255,255,0.9);
+	line-height: 1em;
+}
+.bannerOverlayText h2, .bannerOverlayText h3{
+	font-family: $body-font;
+	font-style:normal;
+}
+.bannerOverlayText h2 {
+	font-size: 4em;
+}
+.bannerOverlayText h3 {
 	font-size: 2em;
-	font-weight: normal;
-	font-style: normal;
-	color: rgba(255, 255, 255, .6);
-	text-shadow: 2px 2px 0 rgba(123, 121, 143,.6);
 }
-.articleFooter {
-	text-align: right;
+#mainNav li {
+	list-style-type: none;
+}
+#mainNav a {
+	text-decoration: none;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: .8em;
+	color: white;
+}
+.threeColumn h1 {
+	font-size: 2em;
+}
+.threeColumn .leader {
+	font-size: 1em;
+}
+.threeColumn section {
+	font-size: .9em;
+	font-weight: normal;
+	line-height: 1.8;
+	text-align: center;
+}
+#pageFooter {
+	color: white;
+}
+#newVisitorBar {
+	font-size: .8em;
+	line-height: 5em;
+}
+.leader {
+	font-size: 1.2em;
+	font-weight: bold;
 }
 #siteFooter {
-	text-align: right;
+	padding-left: 2em;
+	line-height: 50px;
+}
+.buttonBig {
+	text-transform: uppercase;
+	line-height: 3.5em;
 }

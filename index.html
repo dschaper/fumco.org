@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>First United Methodist Church of Orange</title>
+    <!-- Reset viewport for RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Adds HTML5 element support for earlier versions of IE -->
+<!--[if lt IE9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+	</script><![end if]-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Google Maps API -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+            google.maps.event.addDomListener(window, 'load', init);
+            function init() {
+            var mapOptions = {
+					scrollwheel: false,
+					zoomControl: true,
+                    zoom: 12,
+                    center: new google.maps.LatLng(33.788, -117.89), 
+                    styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+                };
+                var mapElement = document.getElementById('map');
+                var map = new google.maps.Map(mapElement, mapOptions);
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(33.7869705,-117.8518984),
+                    map: map,
+                });
+            }
+        </script>
+    <script>
+    /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+    window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+    grunticon( [ "css/icons.data.svg.css", "css/icons.data.png.css", "css/icons.fallback.css" ] );
+    </script>
+    <noscript>
+    <link href="icons.fallback.css" rel="stylesheet">
+    </noscript>
+    </head>
+    <body>
+<section id="pageHeader">
+      <header id="mainHeader" class="icon-CrossFlameFUMCO icon">
+    161 S Orange Street
+    <button type="button" name="" value="" class="buttonSmall">Giving</button>
+  </header>
+      <nav id="mainNav">
+    <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">visitors</a></li>
+          <li><a href="#">event</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">ministries</a></li>
+          <li><a href="#">sermons</a></li>
+        </ul>
+  </nav>
+    </section>
+<main id="homePage">
+      <section id="banner"><img class="flex" src="images/HERO1Mock.jpg" alt=""/>
+      <section class="bannerOverlayText"><h3>Sunday 10:30am</h3><h2>WORSHIP SERVICE</h2><h3>All are welcome</h3></section></section>
+      <div class="threeColumn clearfix">
+    <section class="col1">
+        <h1>Our Worship</h1>
+          <span class="leader">Open Hearts</span>
+          <p class="icon icon-Heart">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus</p>
+          <footer>
+        <button type="button" name="" value="" class="buttonSmall">MORE</button>
+      </footer>
+        </section>
+    <section class="col2">
+      <h1>Our Fellowship</h1>
+          <span class="leader">Open Doors</span>
+          <p class="icon icon-People">Tenetur quod quidem in voluptatem corporis dolorum dicta sit pariatur porro quaerat autem ipsam odit quam beatae tempora</p>
+          <footer>
+        <button type="button" name="" value="" class="buttonSmall">MORE</button>
+      </footer>
+        </section>
+    <section class="col3">
+      <h1>Our Mission</h1>
+      <span class="leader">Open Minds</span><p class="icon-Book icon">The mission of First United Methodist Church of Orange is to make disciples for Jesus Christ for the transformation of the world.</p>
+          <footer>
+        <button type="button" name="" value="" class="buttonSmall">MORE</button>
+      </footer>
+        </section>
+  </div>
+    </main>
+<footer id="pageFooter">
+      <section id="newVisitorBar" class="icon-CrossFlameWhite"><span class="leader">New Visitor?</span> Find out when, where and how we worship. We hope to see you soon!
+        <button type="button" name="" value="" class="buttonBig">Learn About Us</button>
+  </section>
+      <div id="map"></div>
+    </footer>
+<footer id="siteFooter"> <small>First United Methodist Church of Orange &copy; 2015 <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></small> </footer>
+</body>
+</html>
