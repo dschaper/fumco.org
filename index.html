@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>First United Methodist Church of Orange</title>
     <!-- Reset viewport for RWD -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Adds HTML5 element support for earlier versions of IE -->
-<!--[if lt IE9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Adds HTML5 element support for earlier versions of IE -->
+    <!--[if lt IE9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 	</script><![end if]-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -39,10 +39,10 @@
     <link href="icons.fallback.css" rel="stylesheet">
     </noscript>
     </head>
+
     <body>
 <section id="pageHeader">
-      <header id="mainHeader" class="icon-CrossFlameFUMCO icon">
-    161 S Orange Street
+      <header id="mainHeader" class="icon-CrossFlameFUMCO icon"> 161 S Orange Street
     <button type="button" name="" value="" class="buttonSmall">Giving</button>
   </header>
       <nav id="mainNav">
@@ -59,10 +59,16 @@
     </section>
 <main id="homePage">
       <section id="banner"><img class="flex" src="images/HERO1Mock.jpg" alt=""/>
-      <section class="bannerOverlayText"><h3>Sunday 10:30am</h3><h2>WORSHIP SERVICE</h2><h3>All are welcome</h3></section></section>
+    <section class="bannerOverlayText">
+          <p>Sunday 10:30am</p>
+          <strong>Worship Service</strong>
+          <p>All are welcome</p>
+        </section>
+        <div class="bannerOverlayBox">&nbsp</div>
+  </section>
       <div class="threeColumn clearfix">
     <section class="col1">
-        <h1>Our Worship</h1>
+          <h1>Our Worship</h1>
           <span class="leader">Open Hearts</span>
           <p class="icon icon-Heart">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus</p>
           <footer>
@@ -70,7 +76,7 @@
       </footer>
         </section>
     <section class="col2">
-      <h1>Our Fellowship</h1>
+          <h1>Our Fellowship</h1>
           <span class="leader">Open Doors</span>
           <p class="icon icon-People">Tenetur quod quidem in voluptatem corporis dolorum dicta sit pariatur porro quaerat autem ipsam odit quam beatae tempora</p>
           <footer>
@@ -78,8 +84,9 @@
       </footer>
         </section>
     <section class="col3">
-      <h1>Our Mission</h1>
-      <span class="leader">Open Minds</span><p class="icon-Book icon">The mission of First United Methodist Church of Orange is to make disciples for Jesus Christ for the transformation of the world.</p>
+          <h1>Our Mission</h1>
+          <span class="leader">Open Minds</span>
+          <p class="icon-Book icon">The First United Methodist Church of Orange makes disciples of Jesus Christ for the transformation of the world.</p>
           <footer>
         <button type="button" name="" value="" class="buttonSmall">MORE</button>
       </footer>
@@ -88,7 +95,7 @@
     </main>
 <footer id="pageFooter">
       <section id="newVisitorBar" class="icon-CrossFlameWhite"><span class="leader">New Visitor?</span> Find out when, where and how we worship. We hope to see you soon!
-        <button type="button" name="" value="" class="buttonBig">Learn About Us</button>
+    <button type="button" name="" value="" class="buttonBig">Learn About Us</button>
   </section>
       <div id="map"></div>
     </footer>

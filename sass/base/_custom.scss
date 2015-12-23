@@ -1,11 +1,12 @@
 /* reset browser styles */
-
 * {
 	box-sizing: border-box;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
@@ -35,21 +36,28 @@ a {
 	color: #F5E1A4; 
 	}
 }
+/* global styles */
 html {
 	font-size:100%;
 }
 img {
 	display: block;
 }
+body {
+	background-color: $lt_gray;
+}
+main, #pageFooter, #siteFooter, #mainHeader, #mainNav {
+	width: 95%;
+	min-width: 800px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
 #pageHeader {
 	background: $med_gray;
 }
 #mainHeader {
-	height: 6.75em;
-	margin: 0 auto;
-	margin-bottom: .5em;
-	margin-top: -.5em;
-	max-width: 80%;
+	height: 5.75em;
+	background-position: 53% 120%;	
 }
 #mainNav {
 	background-color: $logo_redDark;
@@ -72,15 +80,16 @@ img {
 	text-align: center;
 	width: 100%;
 }
-body {
-	background-color: $lt_gray;
+.bannerOverlayBox {
+	background-color: rgba(255,255,255,.5);
+	height: 7em;
+	position: absolute;
+	top: 84%;
+	width: 100%;
+	z-index: 10;
 }
-main, #pageFooter, #siteFooter {
-	width: 95%;
-	min-width: 800px;
-	max-width: 1100px;
-	margin: 0 auto;
-	background-color: #FFF;
+.threeColumn {
+	background-color: white;
 }
 .threeColumn h1 {
 	margin-bottom: -.1em;
@@ -102,38 +111,40 @@ main, #pageFooter, #siteFooter {
 .col1 {
 	float: left;
 	padding-left: 4.5em;
-	padding-right: 1em;
-	border-right: 1px solid red;
+	padding-right: 1em;	
 }
 .col2 {
 	float: right;
 	padding-right: 4.5em;
 	padding-left: 1em;
-	border-left: 1px solid red;
 }
 .col3 {
 	width: 25%;
 	margin: 0 auto;
+	padding: 0 1em;
+	border-right: 1px solid red;
+	border-left: 1px solid red;
 }
 .icon {
 	background-position: 50% 50%;
 }
-.buttonSmall {
-	font-size: .875em;
-	color: #FFF;
-	padding: .1em 1em;
-	border: none;
-	font-weight: bold;
+button {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 	background-color: $logo_redPrimary;
-	  /*Transition*/
-  	-webkit-transition: All 0.5s ease;
+	color: #FFF;
+	-webkit-transition: All 0.5s ease;
   	-moz-transition: All 0.5s ease;
   	-o-transition: All 0.5s ease;
   	-ms-transition: All 0.5s ease;
   	transition: All 0.5s ease;
+}
+.buttonSmall {
+	font-size: .875em;
+	padding: .1em 1em;
+	border: none;
+	font-weight: bold;
 }
 .buttonSmall:hover {
 	background-color: #ff5c7b;
@@ -142,21 +153,8 @@ main, #pageFooter, #siteFooter {
 	height: 3.5em;
 	border: 1px solid white;
 	padding: 0 .5em;
-	font-size: 1em;
-	color: #FFF;
-	margin-top: .7em;
-	margin-right:4em;
+	margin: .7em 4em;
 	float: right;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-	background-color: $logo_redPrimary;
-	  /*Transition*/
-  	-webkit-transition: All 0.5s ease;
-  	-moz-transition: All 0.5s ease;
-  	-o-transition: All 0.5s ease;
-  	-ms-transition: All 0.5s ease;
-  	transition: All 0.5s ease;
 }
 .buttonBig:hover {
 	color: #e4002b;
@@ -182,5 +180,5 @@ main, #pageFooter, #siteFooter {
 #siteFooter {
 	background: white;
 	margin: 0 auto;
-	height:3.125em;
+	height: 3.125em;
 }

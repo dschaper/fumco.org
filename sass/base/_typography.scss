@@ -20,17 +20,15 @@ h2 {
 .bannerOverlayText {
 	text-align: center;
 	color:rgba(255,255,255,0.9);
+	font-size: 2em;
 	line-height: 1em;
 }
-.bannerOverlayText h2, .bannerOverlayText h3{
-	font-family: $body-font;
-	font-style:normal;
-}
-.bannerOverlayText h2 {
-	font-size: 4em;
-}
-.bannerOverlayText h3 {
+.bannerOverlayText strong {
 	font-size: 2em;
+	text-transform: uppercase;
+}
+#mainNav {
+	text-align: center;
 }
 #mainNav li {
 	list-style-type: none;
